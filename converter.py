@@ -1,4 +1,3 @@
-from tkinter import Button
 import PySimpleGUI as sg
 
 layout = [
