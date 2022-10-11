@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 import cv2
 
-
 layout = [
     [sg.Image(key = "-IMAGE-")],
     [sg.Text("People in the picture: 0", key = "-TEXT-", expand_x=True, justification="c")] # c means center.
@@ -12,7 +11,6 @@ window = sg.Window("Face Detector", layout)
 # get video.
 video = cv2.VideoCapture(0) # 0 for webcam, 1 for dslr etc.
 face_cascade = cv2.CascadeClassifier("face_detector\haarcascade_frontalface_default.xml")
-
 
 while True:
     event, values = window.read(timeout = 0)
