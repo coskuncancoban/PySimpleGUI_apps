@@ -57,8 +57,4 @@ while True:
     if event == "Exit":
         window.close()
 
-
-
-
-
 window.close()
